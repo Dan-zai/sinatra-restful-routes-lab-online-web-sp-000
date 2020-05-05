@@ -1,0 +1,7 @@
+<%if @recipes.empty?%>
+<h1> No recipes! </h1>
+<%else%>
+<% @recipes.each do |recipe| %>
+  <a href="/recipes/<%= recipe.id %>"> <%= recipe.name %> </a>
+<% end %> 
+<% end %> 
